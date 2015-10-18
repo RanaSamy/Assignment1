@@ -1,0 +1,24 @@
+1. What is a class?
+A class is a programming construct that defines the common state and behavior of a group of similar objects 
+2. How does a class accomplish abstraction, encapsulation, and data hiding?
+Abstraction:is a simplified view of an object in the user’s own vocabulary and is the simplest interface to an object that provides all the features and services the intended users expect
+Encapsulation:Encapsulation is the packing of data and functions into a single component. The features of encapsulation are supported using classes in most object-oriented programming languages, although other alternatives also exist. It allows selective hiding of properties and methods in an object by building an impenetrable wall to protect the code from accidental corruption.
+Data hiding:Data hiding is a software development technique specifically used in object-oriented programming (OOP) to hide internal object details (data members). Data hiding ensures exclusive data access to class members and protects object integrity by preventing unintended or intended changes.
+3. What is the relationship between an object and a class?
+The term ‘object’, however, refers to an actual instance of a class. Every object must belong to a class. Objects are created and eventually destroyed – so they only live in the program for a limited time. While objects are ‘living’ their properties may also be changed signficantly.
+4. In what way, aside from being functions, are class function members different from
+class data members?
+ functions are set of instructions or procedures for doing a certain task , these procedures are dependent on each other. 
+ but class you can create objects and these objects  can exist in its own and can be reused for later purposes.
+ 5. Define a class to represent a bank account. Data members should include the depositor’s name, the account number (use a string), and the balance. Member functions should allow the following
+ 6. When are class constructors called? When are class destructors called?
+  Every time an instance of a class is created the constructor method is called. The constructor has the same name as the class and it doesn't return any type,
+  while the destructor's name it's defined in the same way, but with a '~' and called If you create an automatic storage class object, as the examples have been doing, its destructor is called automatically when the program exits the block of code in which the object is defined and when you use to free some memory
+  7. Provide code for a constructor for the bank account class from Chapter Review Question 5.
+  BankAccount(){
+  }
+  8. What is a default constructor? What is the advantage of having one?
+  A default constructor is a constructor which can be called with no arguments (either defined with an empty parameter list, or with default arguments provided for every parameter). 
+  it's advanatge: When you create a new object in C++, initially all of its data members have a completely indeterminate value. If you want to have the object determine its own default, it needs to have some code to execute in order to set its fields to meaningful values. So in short, yes, objects should determine their initial values, and the constructor is the way to do it. They're invoked automatically.
+  10. What are this and *this?
+  C++ utilizes a hidden pointer named “this”
