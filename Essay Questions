@@ -11,7 +11,12 @@ class data members?
  functions are set of instructions or procedures for doing a certain task , these procedures are dependent on each other. 
  but class you can create objects and these objects  can exist in its own and can be reused for later purposes.
  5. Define a class to represent a bank account. Data members should include the depositor’s name, the account number (use a string), and the balance. Member functions should allow the following
- 
+ *BankAccount b;
+ *b.setName("Rana");
+ 	b.setAccount("234");
+ 	b.setBalance(20);
+ *b.deposite(1024);
+ *b.deposite(1024);
  6. When are class constructors called? When are class destructors called?
   Every time an instance of a class is created the constructor method is called. The constructor has the same name as the class and it doesn't return any type,
   while the destructor's name it's defined in the same way, but with a '~' and called If you create an automatic storage class object, as the examples have been doing, its destructor is called automatically when the program exits the block of code in which the object is defined and when you use to free some memory
