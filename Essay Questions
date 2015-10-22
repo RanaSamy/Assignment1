@@ -26,5 +26,8 @@ class data members?
   8. What is a default constructor? What is the advantage of having one?
   A default constructor is a constructor which can be called with no arguments (either defined with an empty parameter list, or with default arguments provided for every parameter). 
   it's advanatge: When you create a new object in C++, initially all of its data members have a completely indeterminate value. If you want to have the object determine its own default, it needs to have some code to execute in order to set its fields to meaningful values. So in short, yes, objects should determine their initial values, and the constructor is the way to do it. They're invoked automatically.
+  9.Modify the Stock class definition (the version in stock20.h) so that it has member functions that return the values of the individual data members. Note:A member that returns the company name should not provide a weapon for altering the array.
+That is, it can’t simply return a string reference. It could return a const reference.
+const string company (...)
   10. What are this and *this?
   C++ utilizes a hidden pointer named “this”
